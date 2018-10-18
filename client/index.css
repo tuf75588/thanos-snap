@@ -23,3 +23,10 @@ header {
   height: 80%;
   width: 90%;
 }
+#thanos:hover {
+  transform: scale(1.5);
+}
+#snap {
+  height: 60%;
+  width: auto;
+}

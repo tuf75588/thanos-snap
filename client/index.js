@@ -1,3 +1,5 @@
+const audioElement = new Audio('sounds/intro.mp3');
+
 const endpoint =
   'https://gateway.marvel.com/v1/public/events/29/characters?ts=andrew&limit=100&apikey=58b1be5fc900af8aa150d118572b134f&hash=9cc92bb474717133ddc32997d9781d26';
 const container = document.querySelector('.container');
@@ -16,6 +18,12 @@ function getCharacterData() {
     });
   });
 }
+const hiddenCharacters = {
+  1009652: true,
+  1009165: true,
+  1009726: true,
+  1009299: true
+};
 getCharacterData().then(({ data }) => {
   const characters = data;
   addCharactersToPage(characters);
