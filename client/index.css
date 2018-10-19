@@ -27,6 +27,7 @@ header {
   transform: scale(1.5);
 }
 #snap {
-  height: 60%;
+  height: 80%;
   width: auto;
+  transition-duration: 4s;
 }
