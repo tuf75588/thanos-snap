@@ -1,22 +1,33 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="index.css">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Thanos Snap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <header>
             <img id="thanos"
                 src="https://i.annihil.us/u/prod/marvel/i/mg/6/40/5274137e3e2cd/standard_medium.jpg"
-                />
+                alt="Thanos">
+            <br />
+            <h3 id="clickThanos" style="display:none">Click Thanos To Balance
+                The Universe</h3>
+            <h2 style="opacity: 0" id="the-truth">Balance Has Been Restored In
+                The Universe...</h2>
         </header>
         <main class="characters">
-
+            <h2>Loading characters...</h2>
         </main>
-        <img src='snap.jpg' id="snap" />
+        <img style="opacity: 0" id="snap" src="snap.jpg" alt="">
+        <audio id="intro-sound" src="sounds/intro.mp3"></audio>
+        <audio id="snap-sound" src="sounds/snap.mp3"></audio>
+        <audio id="funeral-sound" src="sounds/funeral.mp3"></audio>
+        <small class="credit">All data from the Marvel API:
+            https://developer.marvel.com/</small>
+        <script src="app.js"></script>
     </body>
-    <script src="index.js"></script>
 </html>

@@ -31,3 +31,6 @@ header {
   width: auto;
   transition-duration: 4s;
 }
+.character {
+  transition-duration: 1s;
+}
